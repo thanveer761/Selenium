@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<parameter name="username" value="demosalesmanager"></parameter>
+<parameter name="password" value="crmsfa"></parameter>
+
+  <test thread-count="5" name="Test" verbose="5">
+    <classes>
+        <class name="testcase.CreateLead"/>  
+        <class name="testcase.EditLead"/>  
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
