@@ -34,23 +34,24 @@ public class SFO25CreateNewCase {
 	
 	//click global actions svg icon
 
-	Thread.sleep(10000);
+	Thread.sleep(30000);
 	
 	WebElement element = driver.findElementByXPath("//*[@data-key='add']");
 	element.click();
 	
 	//click newCase
-	Thread.sleep(5000);
+	//Thread.sleep(10000);
 	 driver.findElementByXPath("//span[text()='New Case']").click();
 
    //click contact name
- driver.findElementByXPath("//span[text()='Naveen Elumalai']").click();
+	Thread.sleep(10000);
+	driver.findElementByXPath("//input[@title='Search Contacts']").click();
+	 driver.findElementByXPath("//div[text()='Naveen Elumalai']").click();
+	 
 
 //choose dropDown status as escalated
-WebElement selector = driver.findElementByCssSelector("html>body>div:nth-of-type(4)>div>div:nth-of-type(2)>div:nth-of-type(3)>div:nth-of-type(3)>div>div>div>div>div>div:nth-of-type(2)>div>div>section>div>section>div>div>div>div>div>div:nth-of-type(2)>div>div>div>div>div>div>div>div>a");
-
-Select dropDown = new Select (selector);
-dropDown.selectByVisibleText("Escalated");
+	 driver.findElementByXPath("//*[text()='New']").click();
+driver.findElementByXPath("//a[@title='Escalated']").click();
 
 //enter subject  as testing
 driver.findElementByXPath("//span[text()='Subject']/following::input").sendKeys("testing");
@@ -61,6 +62,7 @@ driver.findElementByXPath("//span[text()='Description']/following::textarea").se
 //click save
 driver.findElementByXPath("(//span[text()='Save'])[2]").click();
 
+System.out.println("new case created"
 
 	}
 
