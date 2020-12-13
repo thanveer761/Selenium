@@ -46,7 +46,7 @@ public class WebDriverServiceImpl extends WebDriverListener implements WebDriver
 
 	public String sUrl,sHubUrl,sHubPort;
 	public Properties prop;
-//yes
+
 	public WebDriverServiceImpl() {
 		prop = new Properties();
 		try {

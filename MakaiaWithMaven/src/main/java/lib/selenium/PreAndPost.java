@@ -27,7 +27,7 @@ public class PreAndPost extends WebDriverServiceImpl{
 	public void beforeSuite() {
 		startReport();
 	}
-	//yes
+	
 	@BeforeClass
 	public void beforeClass() {
 		startTestCase(testCaseName, testDescription);		
@@ -35,7 +35,6 @@ public class PreAndPost extends WebDriverServiceImpl{
 	
 	@BeforeMethod
 	public void beforeMethod() {
-		//for reports		
 		startTestModule(nodes);//each data row -> one testcase
 		test.assignAuthor(authors);
 		test.assignCategory(category);

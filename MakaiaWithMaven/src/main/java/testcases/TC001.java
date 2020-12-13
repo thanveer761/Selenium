@@ -30,4 +30,3 @@ public class TC001 extends PreAndPost{
 		.VerifyFileNameandExtension().closeFileWindow().clickItemLink().clickShare().clickSearchUserandSelectDerick()
 		.VerifyErrorMsg().clickCancelButton().clickDropDownforNewlyUploadedFile().clickDelete().confirmDeletePage().VerifyDeleteMsg();
 	}} 
-//https://github.com/thanveer761/Selenium.git

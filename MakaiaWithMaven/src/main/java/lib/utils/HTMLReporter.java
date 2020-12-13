@@ -9,7 +9,7 @@ import com.aventstack.extentreports.MediaEntityModelProvider;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 public abstract class HTMLReporter {
-///yes
+
 	public static ExtentHtmlReporter html;
 	public static ExtentReports extent;
 	public ExtentTest testSuite, test;

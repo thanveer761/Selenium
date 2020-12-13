@@ -29,7 +29,7 @@ import lib.utils.HTMLReporter;
 
 
 public class WebDriverListener extends HTMLReporter implements WebDriverEventListener {
-//yes
+
 	public RemoteWebDriver webdriver;
 	public EventFiringWebDriver driver;
 	public int i = 1;

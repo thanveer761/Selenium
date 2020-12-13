@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 public interface WebDriverService {
-//yes
+
 		
 	/**
 	 * This method will locate the element using any given locator
