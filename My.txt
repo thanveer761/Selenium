@@ -1,0 +1,38 @@
+package week2.day1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class MakeMy {
+
+	public static void main(String[] args) throws InterruptedException {
+		// Setup driver before starting the browser
+				ChromeDriver driver = new ChromeDriver();
+				//ChromeOptions op =new ChromeOptions();
+				//op.addArguments("--")
+				// Load the URL to test
+				driver.get("https://www.makemytrip.com/");
+				// Maximize the browser
+				driver.manage().window().maximize();
+				Thread.sleep(5000);
+				driver.switchTo().frame(driver.findElement(By.id("webklipper-publisher-widget-container-notification-frame")));
+				Thread.sleep(2000);
+			    driver.findElement(By.xpath("//i[@class='wewidgeticon we_close']")).click();
+			    driver.switchTo().defaultContent();
+			    Thread.sleep(2000);
+			    driver.findElement(By.xpath("//div[@class='loginModal displayBlock modalLogin dynHeight personal']")).click();
+				WebElement ele = driver.findElement(By.xpath("(//div//input)[2]"));
+				ele.click();
+				ele.sendKeys("chennai");
+				 Thread.sleep(2000);
+				driver.findElement(By.xpath("//p[text()='Chennai, India']")).click();
+			//	driver.findElement(By.xpath("//i[@class='wewidgeticon we_close']")).click();
+
+
+	}
+
+}
